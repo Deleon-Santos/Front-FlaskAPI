@@ -74,6 +74,9 @@ const API_URL = 'https://flask-fullstack-14.onrender.com/bibliotecas';
         body: JSON.stringify({ titulo, autor })
       });
       alert('Livro enviado com sucesso!');
+      document.getElementById('id-atualizar').value = '';
+      document.getElementById('titulo-atualizar').value = '';
+      document.getElementById('autor-atualizar').value = '';
       listarLivros();
     }
 
@@ -86,6 +89,7 @@ const API_URL = 'https://flask-fullstack-14.onrender.com/bibliotecas';
 
       await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
       alert('Livro excluido com sucesso!');
+      document.getElementById('id-deletar').value = '';
       listarLivros();
     }
 
@@ -102,8 +106,9 @@ const API_URL = 'https://flask-fullstack-14.onrender.com/bibliotecas';
       if (resposta.ok) {
         const livro = await resposta.json();
         resultado.textContent = `ID: ${livro.id} | Título: ${livro.titulo} | Autor: ${livro.autor}`;
+        document.getElementById('id-buscar').value = '';
       } else {
-        resultado.textContent = 'Livro não encontrado!';
+        alert( 'Livro não encontrado!');
       }
     }
 

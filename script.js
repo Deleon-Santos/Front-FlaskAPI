@@ -101,7 +101,7 @@ const API_URL = 'https://flask-fullstack-14.onrender.com/bibliotecas';
       }
 
       const resposta = await fetch(`${API_URL}/${id}`);
-      const resultado = document.getElementById('resultado-busca');
+      const resultado = document.getElementById('lista-livros');
 
       if (resposta.ok) {
         const livro = await resposta.json();

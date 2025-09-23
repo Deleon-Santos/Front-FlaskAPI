@@ -2,9 +2,9 @@
 
 # 📚 Gestão de Biblioteca
 
-Uma aplicação web para gerenciar livros de forma simples e intuitiva.  
-Permite **cadastrar, atualizar, excluir, buscar e listar** livros, integrando-se com o back-end para persistência dos dados.
-[Link da aplicação WEB](https://deleon-santos.github.io/Front-FlaskAPI/)
+Aplicação Front-End para gerenciar livros de forma simples e intuitiva.  
+Permite **cadastrar, atualizar, excluir, buscar e listar** livros, integrando-se com o back-end desenvolvido com Flask e DB postgres para persistência dos dados.
+[Link da aplicação WEB](https://deleon-santos.github.io/Front-FlaskAPI/).
 ---
 
 ## 🚀 Funcionalidades
@@ -12,7 +12,7 @@ Permite **cadastrar, atualizar, excluir, buscar e listar** livros, integrando-se
 - ➕ **Adicionar Livro** – Registra um novo livro informando título e autor.  
 - ✏️ **Atualizar Livro** – Atualiza o título e/ou autor de um livro existente pelo ID.  
 - ❌ **Deletar Livro** – Remove um livro da biblioteca pelo ID.  
-- 🔍 **Buscar Livro por ID** – Localiza rapidamente um livro específico.  
+- 🔍 **Buscar Livro por ID** – Localiza um livro específico.  
 - 📑 **Listar Livros** – Exibe todos os livros cadastrados.  
 - ⏳ **Loading Spinner** – Exibe um indicador visual enquanto o sistema aguarda resposta do servidor.  
 
@@ -22,12 +22,13 @@ Permite **cadastrar, atualizar, excluir, buscar e listar** livros, integrando-se
 
 - **Frontend:**
   - 🌐 HTML5
-  - 🎨 CSS3 (responsividade e estilo)
-  - ⚡ JavaScript (manipulação do DOM e integração com backend)
+  - 🎨 CSS3 
+  - ⚡ JavaScript 
 
 - **Backend:**
-  - 🐍 Python (Flask ou FastAPI) *(ajuste se for outro backend)*
-  - 🗄️ Banco de Dados (MySQL, PostgreSQL ou SQLite)
+    O backend desta aplicação esta hopedado no Render em versão gratuita e pode haver espara de alguns segundos para a resposta inicial.
+  - 🐍 Python Flask  
+  - 🗄️ Banco de Dados PostgreSQL
 
 ---
 

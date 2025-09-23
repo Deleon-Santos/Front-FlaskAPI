@@ -1,5 +1,6 @@
 const API_URL = 'https://flask-fullstack-14.onrender.com/bibliotecas';
     async function listarLivros() {
+      mostrarLoading();
       try {
         const response = await fetch(API_URL);
         const livros = await response.json();
@@ -18,6 +19,8 @@ const API_URL = 'https://flask-fullstack-14.onrender.com/bibliotecas';
         }
       } catch (error) {
         console.error('Erro ao buscar livros:', error);
+      } finally {
+        esconderLoading();
       }
     }
     // chamar a função adicionar novo livro
@@ -113,7 +116,18 @@ const API_URL = 'https://flask-fullstack-14.onrender.com/bibliotecas';
     }
 
 
+function mostrarLoading() {
+  document.getElementById("loading").style.visibility = "visible";
+}
 
+function esconderLoading() {
+  document.getElementById("loading").style.visibility = "hidden";
+}
+
+window.onload = function() {
+  listarLivros();
+  
+}
 
 
 
